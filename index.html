@@ -3,60 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>everybodycandoit</title>
-  <meta name="description" content="Личный канал про DeFi, funding и prediction markets." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <title>Nikita Truzhenikov - личный сайт-визитка</title>
+  <meta name="description" content="Личный сайт Nikita Truzhenikov: DeFi, funding, prediction markets и Telegram-канал everybodycandoit." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nikita Truzhenikov - личный сайт-визитка" />
+  <meta property="og:description" content="Практик по DeFi, funding и prediction markets. Разборы, наблюдения и рабочий процесс без инфошума." />
+  <meta property="og:url" content="https://github.com/truzhenikov/in-progress" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="logo">everybodycandoit</div>
-      <a class="btn btn-ghost" href="https://t.me/everybodycandoit" target="_blank" rel="noopener">Канал</a>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Nikita Truzhenikov</a>
+      <nav class="nav-links" aria-label="Навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#value">Чем полезен</a>
+        <a href="#channel">Канал</a>
+      </nav>
+      <a class="btn btn-outline" href="https://t.me/everybodycandoit" target="_blank" rel="noopener">Telegram</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero container single">
-      <div class="hero-content">
-        <h1>Nikita Truzhenikov</h1>
-        <p class="sub">
-          Веду канал про DeFi, delta-neutral подходы, funding и prediction markets.
-          Пишу о рабочем процессе, личных наблюдениях и том, что использую сам.
-        </p>
-        <div class="actions">
-          <a class="btn" href="https://t.me/everybodycandoit" target="_blank" rel="noopener">Перейти в канал</a>
+  <main id="top">
+    <section class="hero container reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">DeFi • Funding • Prediction Markets</p>
+        <h1>Личный сайт-визитка автора канала <span>@everybodycandoit</span></h1>
+        <p class="lead">Делюсь тем, что использую сам: рабочие подходы, наблюдения, процесс и риск-менеджмент. Без хайпа и обещаний "легких иксов".</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://t.me/everybodycandoit" target="_blank" rel="noopener">Перейти в Telegram-канал</a>
+          <a class="btn btn-outline" href="https://t.me/nikita_truzh" target="_blank" rel="noopener">Связаться</a>
         </div>
       </div>
 
-      <div class="hero-media">
-        <div class="video-wrap">
-          <video autoplay muted loop playsinline poster="https://placehold.co/960x540/0f1117/ffffff?text=your+video">
+      <div class="hero-media reveal-delay">
+        <div class="media-frame">
+          <video autoplay muted loop playsinline poster="https://placehold.co/1200x675/121722/F6F7F9?text=Hero+video+or+GIF">
             <source src="./assets/hero.mp4" type="video/mp4" />
           </video>
-          <div class="video-note">Замените ./assets/hero.mp4 на ваше видео/гиф</div>
+          <p class="media-note">Положите свое видео в <code>assets/hero.mp4</code> или обновите <code>&lt;source&gt;</code>.</p>
         </div>
       </div>
     </section>
 
-    <section class="section container">
-      <h2>О чём канал</h2>
-      <ul class="list">
-        <li>DeFi и дельта-нейтральные стратегии.</li>
-        <li>Funding-идеи и наблюдения по рынку.</li>
-        <li>Prediction markets и рабочие заметки.</li>
+    <section id="about" class="section container reveal">
+      <h2>Обо мне</h2>
+      <p>Я практик в крипто-среде: работаю с DeFi-подходами, funding-стратегиями и prediction markets. В канале фиксирую рабочие гипотезы, разбираю решения и показываю, как выглядит дисциплина в реальной ежедневной работе.</p>
+    </section>
+
+    <section id="value" class="section container reveal">
+      <h2>Чем могу быть полезен</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Системный подход</h3>
+          <p>Структурирую рутину крипто-оператора: процесс, контроль рисков и проверка гипотез.</p>
+        </article>
+        <article class="card">
+          <h3>Практика по funding</h3>
+          <p>Разбираю нейтральные связки, условия и логику выбора инструментов без маркетингового шума.</p>
+        </article>
+        <article class="card">
+          <h3>Prediction markets</h3>
+          <p>Показываю механику и рабочие наблюдения по Polymarket, Opinion и Kalshi.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="channel" class="section container reveal">
+      <h2>О канале @everybodycandoit</h2>
+      <ul class="feature-list">
+        <li>DeFi и дельта-нейтральные подходы.</li>
+        <li>Funding-стратегии и сравнение условий.</li>
+        <li>Рабочие заметки по prediction markets.</li>
+        <li>Ошибки и выводы, а не только удачные решения.</li>
       </ul>
     </section>
 
-    <section class="section container plain-link">
-      <a class="btn" href="https://t.me/everybodycandoit" target="_blank" rel="noopener">t.me/everybodycandoit</a>
+    <section class="section container reveal">
+      <h2>Факты для доверия</h2>
+      <div class="stats-grid">
+        <div class="stat"><strong>Публично</strong><span>регулярно веду канал и делюсь реальной практикой</span></div>
+        <div class="stat"><strong>Кросс-направления</strong><span>DeFi, funding и prediction markets в одном рабочем контуре</span></div>
+        <div class="stat"><strong>Без хайпа</strong><span>без гарантий доходности, с акцентом на риск-менеджмент</span></div>
+      </div>
+    </section>
+
+    <section class="cta container reveal">
+      <h2>Если близок такой подход, присоединяйтесь</h2>
+      <p>Короткие, прикладные и честные материалы без инфошума.</p>
+      <a class="btn" href="https://t.me/everybodycandoit" target="_blank" rel="noopener">Перейти в Telegram-канал</a>
     </section>
   </main>
 
-  <footer class="footer container">
-    <span>© everybodycandoit</span>
+  <footer class="site-footer container">
+    <span>© Nikita Truzhenikov</span>
     <a href="https://t.me/everybodycandoit" target="_blank" rel="noopener">t.me/everybodycandoit</a>
   </footer>
 </body>
