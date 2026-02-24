@@ -1,0 +1,6 @@
+# Function to calculate the area of a rectangle
+def rectangle_area(length, width):
+    return length * width
+
+# Test the function
+print(rectangle_area(5, 8))  # Output: 40
